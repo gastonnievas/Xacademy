@@ -1,5 +1,5 @@
-Santex Xacademy 2023 - Módulo NodeJs. 
-Repositorio para entregas de trabajos de Gastón Nievas.
+Santex Xacademy 2023 - Módulo NodeJs | Repositorio para entregas de Gastón Nievas.<br>
+Puede encontrar el proyecto completo en mi [página GitHub](https://github.com/gastonnievas/Xacademy/tree/main/ModuloNodeJs).
 
 # 🔹 API REST para el manejo de librerías y libros
 Esta es una API REST desarrollada utilizando Node.js, Express, Sequelize y Passport, que permite el manejo de librerías y los libros asociados a cada una de ellas. La API proporciona endpoints para realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) en las entidades de library, book y user.
@@ -52,37 +52,24 @@ A continuación se describe el proceso de desarrollo paso a paso para crear la A
 ## Uso de la API
 Una vez que el servidor está en funcionamiento, se pueden realizar solicitudes a la API utilizando herramientas como Postman o curl. A continuación se proporciona una descripción de los endpoints disponibles:
 
-**POST /login** Inicia sesión y obtiene un token de autenticación.
-JSON: {"user": "admin", "password": "admin"}
+**POST /login** Inicia sesión y obtiene un token de autenticación.<br>
+JSON: {"user": "admin", "password": "admin"}<br>
 
-**POST /user/** Crea un nuevo usuario. Requiere JSON y token Bearer.
-
-**GET /user/id** Obtiene un usuario en particular.
-
-**GET /user** Obtiene todos los usuarios.
-
-**PUT /user/id** Modifica un usuario en particular. Requiere JSON y token Bearer.
-
-**DELETE /user/id** Elimina un usuario en particular (borrado lógico). Requiere token Bearer.
+**POST /user/** Crea un nuevo usuario. Requiere JSON y token Bearer.<br>
+**GET /user/id** Obtiene un usuario en particular.<br>
+**GET /user** Obtiene todos los usuarios.<br>
+**PUT /user/id** Modifica un usuario en particular. Requiere JSON y token Bearer.<br>
+**DELETE /user/id** Elimina un usuario en particular (borrado lógico). Requiere token Bearer.<br>
 
 
-**POST /library** Crea una nueva librería. Requiere JSON y token Bearer.
+**POST /library/** Crea una nueva librería. Requiere JSON y token Bearer.<br>
+**GET /library/id** Obtiene una librería en particular con todos los libros asociados y no eliminados.<br>
+**GET /library** Obtiene todas las librerías.<br>
+**PUT /library/id** Modifica una librería en particular. Requiere JSON y token Bearer.<br>
+**DELETE /library/id** Elimina una librería en particular (borrado lógico). Requiere token Bearer.<br>
 
-**GET /library/id** Obtiene una librería en particular con todos los libros asociados y no eliminados.
-
-**GET /library** Obtiene todas las librerías.
-
-**PUT /library/id** Modifica una librería en particular. Requiere JSON y token Bearer.
-
-**DELETE /library/id** Elimina una librería en particular (borrado lógico). Requiere token Bearer.
-
-
-**POST /book** Crea un nuevo libro. Requiere JSON y token Bearer.
-
-**GET /book/id** Obtiene un libro en particular.
-
-**GET /book** Obtiene todos los libros.
-
-**PUT /book/id** Modifica un libro en particular. Requiere JSON y token Bearer.
-
-**DELETE /book/id** Elimina un libro en particular (borrado lógico). Requiere token Bearer.
+**POST /book/** Crea un nuevo libro. Requiere JSON y token Bearer.<br>
+**GET /book/id** Obtiene un libro en particular.<br>
+**GET /book** Obtiene todos los libros.<br>
+**PUT /book/id** Modifica un libro en particular. Requiere JSON y token Bearer.<br>
+**DELETE /book/id** Elimina un libro en particular (borrado lógico). Requiere token Bearer.<br>
