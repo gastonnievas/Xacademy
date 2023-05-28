@@ -31,7 +31,7 @@ Instalación de dependencias: Se instalan las dependencias necesarias para el pr
 
 - Implementación de los controladores: Se implementan los controladores para manejar las solicitudes HTTP en cada ruta. Los controladores se encargan de interactuar con los modelos de datos y devolver las respuestas adecuadas.
 
-Implementación de providers: Se define la lógica de configuración y creación de objetos.
+- Implementación de providers: Se define la lógica de configuración y creación de objetos.
 
 - Implementación de servicios: Se define la lógica de negocio para utilizar en la API REST. 
 
@@ -44,6 +44,10 @@ Implementación de providers: Se define la lógica de configuración y creación
 - Configuración del servidor: Se configura el servidor Express para escuchar las solicitudes en un puerto específico. Se establece la conexión a la base de datos y se sincronizan los modelos con la base de datos.
 
 - Pruebas y ejecución: Se realizan pruebas para verificar el funcionamiento de la API. Se ejecuta el servidor y se prueban las diferentes rutas utilizando herramientas como Postman o Insomnia.
+
+- Validación de entidades: Se han agregado reglas de validación utilizando las capacidades de validación de Sequelize. Las entidades (librería, libro, usuario) son validadas al momento de crearse o actualizarse.
+
+- Autenticación y autorización: Se ha implementado la autenticación y autorización de usuarios utilizando Passport. Se protegen las rutas que requieren autenticación y solo los usuarios autenticados pueden acceder a ellas.
 
 ## Uso de la API
 Una vez que el servidor está en funcionamiento, se pueden realizar solicitudes a la API utilizando herramientas como Postman o curl. A continuación se proporciona una descripción de los endpoints disponibles:
@@ -82,6 +86,3 @@ JSON: {"user": "admin", "password": "admin"}
 **PUT /book/id** Modifica un libro en particular. Requiere JSON y token Bearer.
 
 **DELETE /book/id** Elimina un libro en particular (borrado lógico). Requiere token Bearer.
-
-- Validación de entidades: Se han agregado reglas de validación utilizando las capacidades de - validación de Sequelize. Las entidades (librería, libro, usuario) son validadas al momento de crearse o actualizarse.
-- Autenticación y autorización: Se ha implementado la autenticación y autorización de usuarios utilizando Passport. Se protegen las rutas que requieren autenticación y solo los usuarios autenticados pueden acceder a ellas.
