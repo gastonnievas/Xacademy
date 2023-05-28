@@ -1,7 +1,7 @@
-# Xacademy
-Repositorio para entregas de trabajos de Gastón Nievas
+Santex Xacademy 2023 - Módulo NodeJs. 
+Repositorio para entregas de trabajos de Gastón Nievas.
 
-# API REST para el manejo de librerías y libros
+# 🔹 API REST para el manejo de librerías y libros
 Esta es una API REST desarrollada utilizando Node.js, Express, Sequelize y Passport, que permite el manejo de librerías y los libros asociados a cada una de ellas. La API proporciona endpoints para realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) en las entidades de library, book y user.
 
 ## Requisitos
@@ -13,15 +13,15 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 ## Pasos del desarrollo
 A continuación se describe el proceso de desarrollo paso a paso para crear la API REST:
 
-Creación del proyecto: Se crea un nuevo directorio para el proyecto y se inicializa un nuevo proyecto de Node.js utilizando el comando npm init o yarn init. Se completan los detalles requeridos, como el nombre del proyecto, la descripción, la versión, etc.
+- Creación del proyecto: Se crea un nuevo directorio para el proyecto y se inicializa un nuevo proyecto de Node.js utilizando el comando npm init o yarn init. Se completan los detalles requeridos, como el nombre del proyecto, la descripción, la versión, etc.
 
-Instalación de dependencias: Se instalan las dependencias necesarias para el proyecto utilizando NPM o Yarn. Las dependencias principales son:
+- Instalación de dependencias: Se instalan las dependencias necesarias para el proyecto utilizando NPM o Yarn. Las dependencias principales son:
 
-  - Axios: Para realizar llamadas http.
-  - Express: Para crear y manejar el servidor web.
-  - Sequelize: Para la interacción con la base de datos relacional.
-  - Passport: Para la autenticación y autorización de usuarios.
-  - JSONWebToken: Para generar tokens de autenticación.
+    - Axios: Para realizar llamadas http.
+    - Express: Para crear y manejar el servidor web.
+    - Sequelize: Para la interacción con la base de datos relacional.
+    - Passport: Para la autenticación y autorización de usuarios.
+    - JSONWebToken: Para generar tokens de autenticación.
 
 - Configuración de la base de datos: Se configura la conexión a la base de datos, incluyendo el nombre de la base de datos, el nombre de usuario, la contraseña, el host y el dialecto (por ejemplo, MySQL).
 
